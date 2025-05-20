@@ -43,7 +43,7 @@ async function run() {
 
         app.post('/plants', async (req, res) => {
             const newPlant = req.body;
-            
+            console.log(newPlant)
             const result = await plantCollection.insertOne(newPlant);
             res.send(result);
         })
