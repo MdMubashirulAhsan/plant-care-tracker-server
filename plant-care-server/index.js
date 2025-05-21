@@ -40,19 +40,7 @@ async function run() {
 
       res.send(result);
     });
-    // app.get('/slides', async (req, res) => {
-    //     // const cursor = coffeesCollection.find();
-
-    //     const result = await slidesCollection.find().toArray();
-    //     res.send(result);
-    // });
-    // app.get('/dummy', async (req, res) => {
-    //     // const cursor = coffeesCollection.find();
-
-    //     const result = await dummyCollection.find().toArray();
-    //     res.send(result);
-    // });
-
+    
     app.get("/plants/:id", async (req, res) => {
       const id = req.params.id;
       const query = { _id: new ObjectId(id) };
