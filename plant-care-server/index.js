@@ -76,13 +76,7 @@ async function run() {
         $set: updatedPlant,
       };
 
-      // const updatedDoc = {
-      //     $set: {
-      //         name: updatedCoffee.name,
-      //         supplier: updatedCoffee.supplier
-      //     }
-      // }
-
+      
       const result = await plantCollection.updateOne(
         filter,
         updatedDoc,
