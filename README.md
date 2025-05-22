@@ -2,7 +2,7 @@
 
 The backend API server for the Plant Care Tracker app, providing RESTful endpoints to manage plant data and user tasks. Built with Express.js and MongoDB, deployed on Vercel for seamless cloud hosting.
 
-🔗 **Live API URL:** [https://plant-care-tracker-backend.vercel.app](https://plant-care-tracker-backend.vercel.app)
+🔗 **Live API URL:**(https://plant-care-server-navy.vercel.app)
 
 ---
 
@@ -38,5 +38,5 @@ The backend API server for the Plant Care Tracker app, providing RESTful endpoin
 
 1. Clone the repository  
    ```bash
-   git clone https://github.com/yourusername/plant-care-tracker-backend.git
-   cd plant-care-tracker-backend
+   git clone (https://github.com/Programming-Hero-Web-Course4/b11a10-server-side-MdMubashirulAhsan.git)
+   cd plant-care-server
