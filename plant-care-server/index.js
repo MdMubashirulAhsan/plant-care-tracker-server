@@ -26,6 +26,8 @@ async function run() {
 
     const imagesCollection = client.db("plantDB").collection("images")
 
+    const tipsCollection = client.db("plantDB").collection("tips")
+
     const usersCollection = client.db("plantDB").collection("users");
 
     app.get("/plants", async (req, res) => {
@@ -96,6 +98,16 @@ async function run() {
       res.send(result);
     });
 
+
+    // tips related api
+    app.get("/tips", async (req, res) => {
+      const result = await tipsCollection
+        .find()
+
+        .toArray();
+
+      res.send(result);
+    });
 
 
     // User related APIs
